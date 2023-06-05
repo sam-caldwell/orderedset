@@ -2,7 +2,7 @@ package orderedset
 
 import "testing"
 
-func TestSet_Push(t *testing.T) {
+func TestOrderedSet_Push(t *testing.T) {
 	var set Set
 	if err := set.Push(0); err != nil {
 		t.Fatal(err)
