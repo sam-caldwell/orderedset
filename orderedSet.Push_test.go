@@ -4,10 +4,18 @@ import "testing"
 
 func TestSet_Push(t *testing.T) {
 	var set Set
-	set.Push(0)
-	set.Push(1)
-	set.Push(2)
-	set.Push(3)
+	if err := set.Push(0); err != nil {
+		t.Fatal(err)
+	}
+	if err := set.Push(1); err != nil {
+		t.Fatal(err)
+	}
+	if err := set.Push(2); err != nil {
+		t.Fatal(err)
+	}
+	if err := set.Push(3); err != nil {
+		t.Fatal(err)
+	}
 	if set.Count() != 4 {
 		t.Fatal("count mismatch")
 	}
