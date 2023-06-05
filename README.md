@@ -38,6 +38,10 @@ when you really just want to solve problems?
 
 > Pop element 0 from the set and return its value
 
+### `.Push(item any)`
+
+> Push an element to the top of the set.
+
 ## Build / test
 
 > For local builds, there is a `Makefile` but there is also a GitHub action for this
