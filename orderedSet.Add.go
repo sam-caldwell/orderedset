@@ -7,6 +7,9 @@ import (
 
 // Add - add item to set.
 func (set *Set) Add(item interface{}) error {
+	if item == nil {
+		return nil
+	}
 	if len(set.data) == 0 {
 		set.typ = reflect.TypeOf(item)
 	} else if reflect.TypeOf(set.data[0]) != reflect.TypeOf(item) {
